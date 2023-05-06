@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+body{
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	display:flex;
+	align-items: center;
+	flex-direction:column;
+	justify-content: center;
+	height:100vh;
+	text-align:center;
+	color:white;
+}
+.obn{
+color: red;
+background-color: yellow;
+border:2px green dashed;
+padding: 10px;
+text-decoration: line-through;
+font-size: 20px;
+}
+body>div{
+}
+#get>div{
+width:400px; height:100px;
+position: relative;
+}
+#get{
+width:200px; height:100px;
+position: relative;
+overflow:hidden;
+}
+img{
+  position:absolute;
+  background-color: red;
+}
+
+
+
+</style>
+</head>
+<body>
+<div>
+<input type="button" onclick="cofnij()" value="-1">
+<div id="get">
+<div>
+		<img src="OIP2.jpg" style="top:0px; left:0px;" width="100px" height="100px" name="obraz"></img>
+		<img src="OIP3.jpg" style="top:0px; left:100px;" width="100px" height="100px" name="obraz"></img>
+		<img src="OIP4.jpg" style="top:0px; left:200px;" width="100px" height="100px" name="obraz"></img>
+		<img src="OIP5.jpg" style="top:0px; left:300px;" width="100px" height="100px" name="obraz"></img>
+</div>
+</div>
+<input type="button" onclick="dalej()" value="1">
+</div>
+<script src="index.js" ></script>
+</body>
+
+</html>

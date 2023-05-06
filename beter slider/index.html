@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+body{
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	display:flex;
+	align-items: center;
+	flex-direction:column;
+	justify-content: center;
+	height:100vh;
+	text-align:center;
+	color:white;
+}
+.obn{
+color: red;
+background-color: yellow;
+border:2px green dashed;
+padding: 10px;
+text-decoration: line-through;
+font-size: 20px;
+}
+body>div{
+display:flex;
+}
+#get{
+	display:flex;
+}
+#get>div{
+width:100px; height:100px;
+}
+.slide{
+object-fit: fill;
+display:inline ;
+animation-name: test ;
+animation-duration: 4s;	
+}
+
+@keyframes test{
+  0% {width:100px; float:left;}
+  49% {width:0px; float:left;}
+  50% {width:0px; float:right;}
+  100% {width:100px; float:right;}
+}
+
+
+.slidereverse{
+object-fit: fill;
+display:inline ;
+animation-name: testreverse ;
+animation-duration: 4s;	
+}
+
+@keyframes testreverse{
+  0% {width:100px; float:right;}
+  49% {width:0px; float:right;}
+  50% {width:0px; float:left;}
+  100% {width:100px; float:left;}
+}
+
+</style>
+</head>
+<body>
+<div>
+<input type="button" onclick="cofnij()" value="-1">
+<div id="get">
+	
+	<div>
+		<img src="OIP2.jpg"  width="100px" height="100px" name="obraz"></img>
+	</div>
+	<div>
+		<img src="OIP3.jpg"  width="100px" height="100px" name="obraz"></img>
+	</div>
+	<div>
+		<img src="OIP4.jpg"  width="100px" height="100px" name="obraz"></img>
+	</div>
+	<div>
+		<img src="OIP5.jpg"  width="100px" height="100px" name="obraz"></img>
+	</div>
+</div>
+<input type="button" onclick="dalej()" value="1">
+</div>
+<div><img src="OIP3.jpg" id="big" ></img></div>
+<script src="index.js" ></script>
+</body>
+
+</html>
